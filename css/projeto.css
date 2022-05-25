@@ -28,9 +28,12 @@
   border-radius: 5px;
   position: relative;
 }
+.p1 {
+  margin-bottom: 10px;
+}
 
-.empresa::before{
-  content: '';
+.empresa::before {
+  content: "";
   display: block;
   width: 4px;
   height: 20px;
@@ -40,31 +43,35 @@
   left: -4px;
 }
 
-.empresa-titulo{
+.empresa-titulo {
   font-size: 1.125rem;
   line-height: 1.4;
   font-weight: bold;
 }
 
-.empresa-titulo a{
+.empresa-titulo a {
   text-decoration: none;
   color: black;
 }
 
-.empresa-texto{
+.empresa-titulo a:hover {
+  font-size: larger;
+}
+
+.empresa-texto {
   font-size: 0.875rem;
   line-height: 1.4;
   color: #525252;
 }
 
-.empresa-habilidades{
+.empresa-habilidades {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   align-content: start;
 }
 
-.empresa-habilidades li{
+.empresa-habilidades li {
   font-size: 0.875rem;
   line-height: 1.4;
   border-radius: 4px;
@@ -81,17 +88,17 @@
   width: 80px;
 }
 
-@media(max-width: 800px){
-  .projetos{
+@media (max-width: 800px) {
+  .projetos {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
-  .projetos .subtitulo{
+  .projetos .subtitulo {
     color: #141414;
   }
 
-  .empresa-ano{
+  .empresa-ano {
     position: initial;
     order: 1;
     width: initial;
@@ -99,8 +106,8 @@
   }
 }
 
-@media(max-width: 400px){
-  .empresa{
+@media (max-width: 400px) {
+  .empresa {
     grid-template-columns: 1fr;
   }
 }
